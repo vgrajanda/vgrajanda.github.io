@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E5E9F0;
+}
+
+main {
+    margin: 3rem;
+}
+
+h2 {
+    font-family: 'Press Start 2P';
+}
+
+hr {
+    margin-top: 2rem;
+}
+
+li, a{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background-color: #2E3440;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem 10%;
+}
+
+header a {
+    font-size: 11px;
+    font-family: 'Press Start 2P';
+}
+
+
+/** 
+ * MAIN
+ * */
+
+.nombre-izquierda {
+    color: #ECEFF4;
+    font-family: 'Press Start 2P';
+    font-size: 1.9rem;
+    cursor: pointer;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    color: #ECEFF4;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #A5D7E8;
+}
+
+.lista-temas {
+    margin-left: 3rem;
+}
+
+.main-desc {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    width: 80%;
+}
+
+.desc h2 {
+    text-align: center;
+}
+
+/** teoria.html **/
+
+.lista-metodologias {
+    margin-left: 1.5rem;
+}
+
+/** Footer **/
+
+footer {
+    font-family: 'Press Start 2P';
+    font-size: 11px;
+    background: #2E3440;
+    color: white;
+    padding: 2rem 5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-email {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.footer-author {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.footer-author i {
+    margin-right: 1rem;
+}
+
+.footer-email i {
+    margin-right: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #B48EAD;
+    transition: all 0.3s ease 0.0s;
+}
