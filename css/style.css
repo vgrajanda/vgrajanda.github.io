@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body, html {
+	height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    height: 100%;
     color: white;
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/home/pix/Documents/github.io/img/background2.jpg') no-repeat center center fixed;     
+	display: flex;
+	flex-direction: column;
+    background-size: cover;
 }
+
+/* HOME PAGE */
 
 .navbar {
     position: fixed;
@@ -55,11 +61,11 @@ body, html {
 }
 
 .content {
-    display: flex;
+	display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-	position: relative;
+    flex: 1; /* permite que el contenido crezca para llenar el espacio disponible */
+    position: relative;
 }
 
 .content::before {
@@ -93,9 +99,9 @@ body, html {
 }
 
 .name {
-    font-size: 24px; /* Tamaño del nombre, puedes ajustarlo */
-    margin: 0; /* Elimina el margen predeterminado */
-    color: white;
+    font-size: 24px;
+	margin: 0;
+	color: white;
 }
 
 .profession-title {
@@ -118,3 +124,54 @@ body, html {
     background-color: #45a049; /* Oscurece un poco el color al pasar el cursor */
 }
 
+
+/* FOOTER */
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background: transparent;
+}
+
+.footer-text {
+    color: white; /* Cambia al color que desees */
+    font-size: 14px; /* Ajusta el tamaño del texto como desees */
+}
+
+.social-icons a {
+    margin-left: 10px; /* Espacio entre íconos, ajusta si necesario */
+}
+
+.social-icons img {
+    width: 24px; /* Ajusta el tamaño de los íconos como desees */
+    height: 24px; /* Ajusta el tamaño de los íconos como desees */
+}
+
+/* ABOUT ME */
+
+.about-me {
+    background-color: rgba(0, 0, 0, 0.7); /* fondo negro con transparencia */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto; /* esto permitirá que el recuadro se ajuste al contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* espacio entre los elementos */
+    max-width: 75%; /* para asegurar que no ocupe todo el ancho de la pantalla */
+}
+
+.hobbies-list {
+	list-style-type: disc;
+	padding-left: 20px;
+	margin-top: -5px;
+}
+
+.hobbies-list li {
+	text-align: left;
+	margin-bottom: 5px;
+}
