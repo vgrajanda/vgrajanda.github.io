@@ -1,141 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-* {
-    box-sizing: border-box;
+body, html {
     margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	z-index: 1000;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: #20C20E;
+}
+
+.navbar ul {
+    list-style-type: none;
     padding: 0;
 }
 
-body {
-    background-color: #E5E9F0;
-}
-
-main {
-    margin: 3rem;
-}
-
-h2 {
-    font-family: 'Press Start 2P';
-}
-
-hr {
-    margin-top: 2rem;
-}
-
-li, a{
-    font-weight: 500;
+.navbar ul li {
+    padding: 8px 8px 8px 32px;
     font-size: 16px;
-    color: black;
-    text-decoration: none;
 }
 
-header {
-    background-color: #2E3440;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1.5rem 10%;
-}
-
-header a {
-    font-size: 11px;
-    font-family: 'Press Start 2P';
-}
-
-
-/** 
- * MAIN
- * */
-
-.nombre-izquierda {
-    color: #ECEFF4;
-    font-family: 'Press Start 2P';
-    font-size: 1.9rem;
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: white;
     cursor: pointer;
-    margin-right: auto;
-    text-decoration: none;
+	z-index: 1001;
+	width: 50px;
+	height: 50px;
 }
 
-.nav-links li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links li a {
-    color: #ECEFF4;
-    transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-    color: #A5D7E8;
-}
-
-.lista-temas {
-    margin-left: 3rem;
-}
-
-.main-desc {
-    font-family: 'Open Sans';
+.content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
+	position: relative;
 }
 
-.desc {
-    width: 80%;
-}
-
-.desc h2 {
-    text-align: center;
-}
-
-/** teoria.html **/
-
-.lista-metodologias {
-    margin-left: 1.5rem;
-}
-
-/** Footer **/
-
-footer {
-    font-family: 'Press Start 2P';
-    font-size: 11px;
-    background: #2E3440;
-    color: white;
-    padding: 2rem 5rem;
-    position: fixed;
+.content::before {
+	content: "";
+    background: url('/home/pix/Documents/github.io/img/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    z-index: -1; /* para que quede detrás del contenido */
 }
 
-.footer-email {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    padding-top: 10px;
+.intro-box {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 }
 
-.footer-author {
-    display: flex;
-    align-items: left;
-    justify-content: left;
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 40%;
 }
 
-.footer-author i {
-    margin-right: 1rem;
-}
-
-.footer-email i {
-    margin-right: 1rem;
-}
-
-footer a {
+.name {
+    font-size: 24px; /* Tamaño del nombre, puedes ajustarlo */
+    margin: 0; /* Elimina el margen predeterminado */
     color: white;
 }
 
-footer a:hover {
-    color: #B48EAD;
-    transition: all 0.3s ease 0.0s;
+.profession-title {
+    font-size: 18px; /* Tamaño del título, puedes ajustarlo */
+    margin: 0; /* Elimina el margen predeterminado */
+    color: white;
 }
+
+.cv-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* Color del botón, puedes ajustarlo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background-color: #45a049; /* Oscurece un poco el color al pasar el cursor */
+}
+
