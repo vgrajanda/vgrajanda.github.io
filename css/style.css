@@ -64,21 +64,8 @@ body, html {
 	display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; /* permite que el contenido crezca para llenar el espacio disponible */
+    flex: 1;
     position: relative;
-}
-
-.content::before {
-	content: "";
-    background: url('/home/pix/Documents/github.io/img/background2.jpg') no-repeat center center fixed;
-    background-size: cover;
-    filter: brightness(30%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; /* para que quede detrás del contenido */
 }
 
 .intro-box {
@@ -93,9 +80,13 @@ body, html {
 }
 
 .profile-pic {
-    width: 140px;
-    height: 140px;
-    border-radius: 40%;
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    background-image: url('../img/me.jpg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .name {
@@ -105,15 +96,15 @@ body, html {
 }
 
 .profession-title {
-    font-size: 18px; /* Tamaño del título, puedes ajustarlo */
-    margin: 0; /* Elimina el margen predeterminado */
+    font-size: 18px;
+    margin: 0;
     color: white;
 }
 
 .cv-button {
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50; /* Color del botón, puedes ajustarlo */
+    background-color: #4CAF50;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -121,7 +112,7 @@ body, html {
 }
 
 .cv-button:hover {
-    background-color: #45a049; /* Oscurece un poco el color al pasar el cursor */
+    background-color: #45a049;
 }
 
 
@@ -137,41 +128,47 @@ body, html {
 }
 
 .footer-text {
-    color: white; /* Cambia al color que desees */
-    font-size: 14px; /* Ajusta el tamaño del texto como desees */
+    color: white;
+    font-size: 14px;
 }
 
 .social-icons a {
-    margin-left: 10px; /* Espacio entre íconos, ajusta si necesario */
+    margin-left: 10px;
 }
 
 .social-icons img {
-    width: 24px; /* Ajusta el tamaño de los íconos como desees */
-    height: 24px; /* Ajusta el tamaño de los íconos como desees */
+    width: 24px;
+	height: 24px;
 }
 
 /* ABOUT ME */
 
 .about-me {
-    background-color: rgba(0, 0, 0, 0.7); /* fondo negro con transparencia */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    width: auto; /* esto permitirá que el recuadro se ajuste al contenido */
+    text-align: justify;
+    border-radius: 50px;
+    width: auto;
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    max-width: 80%;
+}
+
+.about-me h1 {
     align-items: center;
-    gap: 15px; /* espacio entre los elementos */
-    max-width: 75%; /* para asegurar que no ocupe todo el ancho de la pantalla */
 }
 
 .hobbies-list {
 	list-style-type: disc;
 	padding-left: 20px;
-	margin-top: -5px;
+	margin-left: 20px;
 }
+
 
 .hobbies-list li {
 	text-align: left;
+	padding-left: 0px;
+	margin-left: 0px;
 	margin-bottom: 5px;
 }
