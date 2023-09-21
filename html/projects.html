@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Ciberseguridad</title>
+    <title>Portafolio Víctor Grajeda</title>
     <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <button class="toggle-btn" onclick="toggleNavbar()">☰</button>
-    <div class="navbar" id="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/about.html">About me</a></li>
-            <li><a href="../html/projects.html">Projects</a></li>
-            <li><a href="../html/blog.html">Blog</a></li>
-        </ul>
-    </div>
+	<button class="toggle-btn" onclick="toggleNavbar()">☰</button>
+	<div class="navbar" id="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../html/about.html">About me</a></li>
+			<li><a href="../html/projects.html">Projects</a></li>
+			<li><a href="../html/blog.html">Blog</a></li>
+		</ul>
+	</div>
+
     <div class="content">
-        <div class="intro-box">
-            <img src="../img/yo.jpg" alt="Tu foto" class="profile-pic">
-			<h1 class="name">Víctor Raúl Grajeda Aranda</h1>
-			<p class="profession-title">Lic. en Informática y tecnologías computacionales | Degree in computer science</p>
-			<a href="../files/test.pdf" download class="cv-button" id="resume">Résumé</a>
+        <div class="projects-grid">
+            <div class="project-box">
+                <h2>Despliegue de aplicación web con AWS</h2>
+                <p>
+					El propósito principal de este proyecto es demostrar la capacidad de desplegar y administrar una aplicación web moderna 
+					en un entorno de nube (AWS) utilizando prácticas de DevOps. La aplicación escogida, Spring PetClinic, es una aplicación 
+					Java estándar que simula un sistema de información para una clínica veterinaria.
+				</p>
+				<a href="projects/appweb-aws.html" class="project-button">Ver más</a>
+            </div>
         </div>
     </div>
 
 	<footer class="footer">
-		<span class="footer-text">© 2023 por Víctor Raúl Grajeda Aranda. Todos los derechos reservados.</span>
+		<span class="footer-text">© 2023 by Víctor Raúl Grajeda Aranda.</span>
 		<div class="social-icons">
-			<a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="../img/linkedin-icon.png" alt="LinkedIn"></a>
-			<a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="../img/github-icon.png" alt="GitHub"></a>
+			<a href="https://mx.linkedin.com/in/vgrajanda" target="_blank" rel="noopener noreferrer">
+				<i class="fa-brands fa-linkedin fa-lg" style="color: #ffffff;"></i></a>
+			<a href="https://github.com/vgrajanda" target="_blank">
+				<i class="fa-brands fa-github-alt fa-lg" style="color: #ffffff;"></i></a>
 		</div>
 	</footer>
 

@@ -33,7 +33,7 @@ body, html {
 }
 
 .navbar a:hover {
-	color: #20C20E;
+	color: #F78CA2;
 }
 
 .navbar ul {
@@ -171,4 +171,50 @@ body, html {
 	padding-left: 0px;
 	margin-left: 0px;
 	margin-bottom: 5px;
+}
+
+/* Projects */
+
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Ajusta este valor según tus necesidades */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* Ajusta para 3 bloques por fila, restando el espacio del 'gap' */
+    box-sizing: border-box;
+}
+
+.project-box h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project-box p {
+    font-size: 16px;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.project-button:hover {
+    background-color: #45a049;
 }
