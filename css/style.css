@@ -143,12 +143,26 @@ body, html {
 
 /* ABOUT ME */
 
+.lang-btn {
+    position: fixed;
+    top: 3px;
+    right: 3px;
+    z-index: 1002;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 5em;
+}
+
 .about-me {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: justify;
-    border-radius: 50px;
-    width: auto;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
