@@ -160,13 +160,14 @@ body, html {
 
 .about-me {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 0.9em;
+    padding-bottom: 0em;
     text-align: justify;
-    border-radius: 20px;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    max-width: 80%;
+    gap: 0.3em;
+    max-width: 85%;
 }
 
 .about-me h1 {
@@ -177,14 +178,15 @@ body, html {
 	list-style-type: disc;
 	padding-left: 20px;
 	margin-left: 20px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
-
 
 .hobbies-list li {
 	text-align: left;
 	padding-left: 0px;
 	margin-left: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 /* Projects */
